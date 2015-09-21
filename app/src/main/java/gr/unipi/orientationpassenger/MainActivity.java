@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
             if (azimuthReference != -1 && azimuthLocal != -1) {
                 view.setText("Relative Orientation: " + String.valueOf(azimuthLocal - azimuthReference));
 
-                float degree = - (azimuthLocal - azimuthReference);
+                float degree = azimuthLocal - azimuthReference;
 
                 // create a rotation animation (reverse turn degree degrees)
                 RotateAnimation ra = new RotateAnimation(
